@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="179dp"
+        android:text="\n\n\n\nJohn McDonald\nLos Angeles,CA"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/photo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ib1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="15dp"
+        android:layout_height="16dp"
+
+        android:src="@drawable/ic_room_black_24dp"
+        app:layout_constraintBottom_toTopOf="@id/view"
+        app:layout_constraintRight_toLeftOf="@+id/photo" />
+
+\
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/mc_donald2"
+        app:layout_constraintBottom_toTopOf="@id/ib2"
+
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:background="@color/colorPrimaryDark"
+        android:text="follow"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="40dp"
+        app:layout_constraintRight_toLeftOf="@id/photo"/>
+
+
+    <ImageButton
+        android:id="@+id/ib1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mc_donald"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ib2"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+    <ImageButton
+        android:id="@+id/ib2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toRightOf="@id/ib1"
+        app:layout_constraintRight_toLeftOf="@id/ib3"
+        android:src="@drawable/mc_donald5"
+        android:scaleType="centerInside"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        android:layout_marginTop="80dp"/>
+    <ImageButton
+        android:id="@+id/ib3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toRightOf="@id/ib2"
+        android:src="@drawable/mc_donald5"
+        android:scaleType="centerInside"
+        app:layout_constraintRight_toLeftOf="@id/ib4"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        android:layout_marginTop="80dp"/>
+
+
+    <TextView
+        android:id="@+id/ib4"
+        android:layout_width="96dp"
+        android:layout_height="92dp"
+        app:layout_constraintLeft_toRightOf="@id/ib3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/photo"
+        android:layout_marginTop="20dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:text="    +4\n   Photo"
+        android:textSize="22dp"
+         android:background="#CCCCCC"/>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="307dp"
+        android:src="@drawable/ic_view_headline_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/ib1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/bar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/search"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/viewmore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/colorPrimary"
+        android:text="View more bio"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="12dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:src="@drawable/ic_forward_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="About More"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ib1" />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintLeft_toRightOf="@id/about"
+        app:layout_constraintTop_toBottomOf="@id/ib2"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_chevron_right_black_24dp"/>
+    <AutoCompleteTextView
+        android:id="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     app:layout_constraintTop_toBottomOf="@id/about"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="10dp"
+        android:text="His poetic eye.Searched any remedies.Trial.Was poverty schemes him he dressing mountains and as suprise haven't subject and could a entered would in the of be not posts,doing the never publication legs."
+        />
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/photo"
+        app:layout_constraintLeft_toRightOf="@id/bar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

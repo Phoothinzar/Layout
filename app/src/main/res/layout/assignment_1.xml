@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/rose"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mainbody"
+        android:layout_width="0dp"
+        android:layout_height="410dp"
+        android:background="@drawable/square"
+        android:paddingRight="200dp"
+        android:paddingBottom="330dp"
+        android:text="Kinkakuji(Golden Pavilion)\nKyoto , Japan"
+        android:textEditNoPasteWindowLayout="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:text="Booking"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="365dp"
+        android:src="@drawable/ic_room_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mainbody" />
+
+    <AutoCompleteTextView
+        android:id="@+id/ec"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="  *Editor's Choice"
+        app:layout_constraintTop_toBottomOf="@id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/body"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_weight="2" />
+
+    <AutoCompleteTextView
+        android:id="@+id/body"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="\t\t\tKinkakuji(Temple of Pavilion) is a Zen Buddhist temple in Kyoto,Japan.It is one of the most popular buildings in Japan,attracting many visitors annually.It is designated as a National Special and is oe of 17 locations making up the Historic Monuments of Ancient Kyoto whick are World Heritage Sites.\n
+\t\t\tBooking now if you want to visit."
+        android:textColor="#000000"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textFontWeight="500"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/mainbody"
+        app:layout_constraintTop_toBottomOf="@id/ec"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintVertical_weight="6" />
+
+    <AutoCompleteTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="\t\t$ 350.0"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/ec"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_weight="2" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
